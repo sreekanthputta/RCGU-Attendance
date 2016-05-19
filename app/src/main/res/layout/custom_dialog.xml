@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eseteventname"
+
+        android:minWidth="150dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/bpassword"
+        android:layout_alignStart="@+id/bpassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Event Name:"
+        android:id="@+id/tseteventname"
+        android:layout_alignBaseline="@+id/eseteventname"
+        android:layout_alignBottom="@+id/eseteventname"
+        android:layout_alignRight="@+id/tpassword"
+        android:layout_alignEnd="@+id/tpassword" />
+
+    <TextView
+        android:id="@+id/tpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password:"
+        android:textSize="15dp"
+        android:layout_alignBaseline="@+id/epassword"
+        android:layout_alignBottom="@+id/epassword"
+        android:layout_toLeftOf="@+id/epassword"
+        android:layout_toStartOf="@+id/epassword"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp" />
+
+    <EditText
+        android:id="@+id/epassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:inputType="textPassword"
+        android:width="150dp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/eseteventname"
+        android:layout_alignLeft="@+id/eseteventname"
+        android:layout_alignStart="@+id/eseteventname" />
+
+    <Button
+        android:id="@+id/bpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Submit"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/epassword"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

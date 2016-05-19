@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:id="@+id/layout">
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:id="@+id/eid"
+        android:hint="ID/Phone No."
+        android:layout_below="@+id/tevent"
+        android:layout_toStartOf="@+id/iface"
+        android:layout_toEndOf="@+id/ilogo"
+        android:maxLines="1"
+        android:numeric="integer"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:maxLength="10"
+        android:singleLine="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:id="@+id/bgetdetails"
+        android:text="Get details"
+        android:layout_below="@id/eid"
+        android:layout_alignBottom="@+id/iface"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:id="@+id/iface"
+        android:layout_width="109dp"
+        android:layout_height="114dp"
+        android:src="@mipmap/blankface"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="109dp"
+        android:layout_height="114dp"
+        android:id="@+id/ilogo"
+        android:src="@mipmap/rcgu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/tname"
+        android:layout_below="@+id/bgetdetails"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pin"
+        android:id="@+id/tpin"
+        android:layout_below="@+id/tname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Branch"
+        android:id="@+id/tbranch"
+        android:layout_below="@+id/tyear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Section"
+        android:id="@+id/tsection"
+        android:layout_below="@+id/tbranch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Group"
+        android:id="@+id/tblood"
+        android:layout_below="@+id/temail"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone number"
+        android:id="@+id/tphone"
+        android:layout_below="@+id/tblood"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ename"
+        android:layout_alignTop="@+id/tname"
+        android:layout_alignLeft="@+id/bgetdetails"
+        android:layout_alignStart="@+id/bgetdetails" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/epin"
+        android:layout_alignTop="@+id/tpin"
+        android:layout_alignLeft="@+id/ename"
+        android:layout_alignStart="@+id/ename" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ebranch"
+        android:layout_alignTop="@+id/tbranch"
+        android:layout_alignLeft="@+id/epin"
+        android:layout_alignStart="@+id/epin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/esection"
+        android:layout_alignTop="@+id/tsection"
+        android:layout_alignLeft="@+id/ebranch"
+        android:layout_alignStart="@+id/ebranch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/eblood"
+        android:layout_alignTop="@+id/tblood"
+        android:layout_alignLeft="@+id/eemail"
+        android:layout_alignStart="@+id/eemail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/ephone"
+        android:layout_alignTop="@+id/tphone"
+        android:layout_alignLeft="@+id/eblood"
+        android:layout_alignStart="@+id/eblood"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="35dp"
+        android:id="@+id/tevent"
+        android:layout_alignParentTop="true"
+        android:hint="Event Name"
+        android:text="@string/event_name"
+        android:lines="1"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/iface"
+        android:layout_alignEnd="@+id/iface" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/bsubmit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/ephone"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:id="@+id/tyear"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tpin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/eyear"
+        android:layout_alignLeft="@+id/epin"
+        android:layout_alignStart="@+id/epin"
+        android:layout_alignTop="@+id/tyear" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:id="@+id/temail"
+        android:layout_below="@+id/tsection"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/eemail"
+        android:layout_alignTop="@+id/temail"
+        android:layout_alignLeft="@+id/esection"
+        android:layout_alignStart="@+id/esection" />
+
+
+</RelativeLayout>
